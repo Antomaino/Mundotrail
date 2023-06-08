@@ -14,9 +14,10 @@ nombreusuario = prompt('Ingresa tu nombre')
 
 if (nombreusuario != '') {
     continuar = prompt('Bienvenid@ ' + nombreusuario + ' al carrito de compras, desea agregar productos? Si/No')
-}else {
-    prompt('Por favor ingresa tu nombre para continuar');
+} else {
+    nombreusuario = prompt('Por favor ingresa tu nombre para continuar');
     continuar = prompt('Bienvenid@ ' + nombreusuario + ' al carrito de compras, desea agregar productos? Si/No');
+} if (continuar != 'Si') {
 }
 
 opcion = parseInt(prompt(`Elige tu producto:\n 1-Producto1\n 2-Producto2`));
@@ -30,26 +31,26 @@ switch (opcion) {
         total = total + precio * cantidad;
         continuar = prompt('Desea agregar otro item al carrito? Si/No');
         while (continuar === 'Si') {
-           cantidad = parseFloat(prompt('Cantidad:'));
-           resultado = total + precio * cantidad;
+            cantidad = parseFloat(prompt('Cantidad:'));
+            resultado = total + precio * cantidad;
             continuar = prompt('Desea agregar otro item al carrito? Si/No');
         }
 
-        alert(`El resumen de tu carrito es: \n` + `Productos:\n ${precio}\n ${cantidad}\n ${total}\n `);
+        alert(`El resumen de tu carrito es: \n` + `Productos:\n` + `Cantidad: ${cantidad}\n` + `Precio: ${precio}\n` + `Total: ${total}\n `);
         break;
 
     case Producto2:
-        precio = 20.5;
+        precio = 10.5;
         cantidad = parseFloat(prompt('Cantidad:'));
         total = total + precio * cantidad;
         continuar = prompt('Desea agregar otro item al carrito? Si/No');
         while (continuar === 'Si') {
             cantidad = parseFloat(prompt('Cantidad:'));
-            total = total + precio * cantidad;
+            resultado = total + precio * cantidad;
             continuar = prompt('Desea agregar otro item al carrito? Si/No');
         }
 
-        alert(`El resumen de tu carrito es: \n` + `Productos:\n ${precio}\n ${cantidad}\n ${total}\n `);
+        alert(`El resumen de tu carrito es: \n` + `Productos:\n` + `Cantidad: ${cantidad}\n` + `Precio: ${precio}\n` + `Total: ${total}\n `);
         break;
 
         console.log('El resumen de tu carrito es:' + total);
