@@ -1,49 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos los Productos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos los Productos</title>
+  <!--BOOSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="..//css/style.css">
 </head>
-<body>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col" id="1">
-          <div class="card h-100">
-            <img src="../assets/kf4.jpg" class="card-img-top" alt="Remera deportiva Montagne">
-            <div class="card-body">
-              <h5 class="card-title">Remera</h5>
-              <p class="card-text">Remera montagne ideal para montaña</p>
-            </div>
-          </div>
+
+<!--ENCABEZADO-->
+<header class="opacidad">
+  <nav class="navbar op3 bg-light fixed-top">
+    <div class="container-fluid">
+      <img class="navbar-brand" href="..//index.html" src="../assets/logo.png">
+      <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" href="..//index.html" id="offcanvasNavbarLabel">Mundo Trail</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="col" id="2">
-          <div class="card h-100">
-            <img src="..//assets/kf2.jpg" class="card-img-top" alt="Pantalon deportivo para montaña">
-            <div class="card-body">
-              <h5 class="card-title">Pantalon</h5>
-              <p class="card-text">Pantalon corto, ideal para tus entrenamientos de verano</p>
-            </div>
-          </div>
-        </div>
-        <div class="col" id="3">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Remera</h5>
-              <p class="card-text">Remera manga corta ideal para tus entrenamientos al aire libre</p>
-            </div>
-          </div>
-        </div>
-        <div class="col" id="4">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="..//index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Participacion de stand y carreras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Convenios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Hidratacion</a></li>
+                <li><a class="dropdown-item" href="#">Zapatillas Trail running</a></li>
+                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                <li><a class="dropdown-item" href="#">Indumentaria</a></li>
+                <li><a class="dropdown-item" href="#">Natacion</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./pages/productos.html">Ver Todos los Productos</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="button" type="submit">
+              <span>Search</span>
+            </button>
+          </form>
         </div>
       </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+
+  <!--TARJETAS-->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" id="1">
+      <div class="card h-100">
+        <img src="../assets/kf4.jpg" class="card-img-top" alt="Remera deportiva Montagne">
+        <div class="card-body">
+          <h5 class="card-title">Remera</h5>
+          <p class="card-text">Remera montagne ideal para montaña</p>
+          <p class="card-text">Talle Unico 50USD</p>
+          <button class="ripple-btn">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col" id="4">
+      <div class="card h-100">
+        <img src="..//assets/kf2.jpg" class="card-img-top" alt="Pantalon deportivo para montaña">
+        <div class="card-body">
+          <h5 class="card-title">Calza</h5>
+          <p class="card-text">Calza deportiva con ajuste en cintura</p>
+          <p class="card-text">Talle Unico 120USD</p>
+          <button class="ripple-btn">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col" id="3">
+      <div class="card h-100">
+        <img src="..//assets/kf3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Campera</h5>
+          <p class="card-text">Campera mujer ideal para tus entrenamientos al aire libre</p>
+          <p class="card-text">Talle Unico 150USD</p>
+          <button class="ripple-btn">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col" id="5">
+      <div class="card h-100">
+        <img src="..//assets/Zapa Hoka.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Zapatilla Hoka</h5>
+          <p class="card-text">Zapatilla Hoka de Trail.</p>
+          <p class="card-text">Talle Unico 250USD</p>
+          <button class="ripple-btn">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col" id="6">
+      <div class="card h-100">
+        <img src="..//assets/kf5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Remera</h5>
+          <p class="card-text">Remera de hombre deportiva. </p>
+          <p class="card-text">Talle Unico 70USD</p>
+          <button class="ripple-btn">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col" id="2">
+      <div class="card h-100">
+        <img src="..//assets/kf1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Campera</h5>
+          <p class="card-text">Campera hombre ideal para tus entrenamientos al aire libre.</p>
+          <p class="card-text">Talle Unico 50USD</p>
+          <button class="ripple-btn">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="..//js/script boton.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>

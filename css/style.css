@@ -1,5 +1,6 @@
 body {
     background-color: #ececec;
+    margin-top: 13%;
 }
 
 
@@ -100,4 +101,18 @@ img {
 
 h2 {
     text-align: center;
+}
+
+/*### BOTON COMPRAR ###*/
+
+.ripple-btn {
+    position: relative;
+    padding: 0.3em 0.5em;
+    color: #121212;
+    font-size: 1rem;
+    border-radius: 100vmax;
+    background-color: transparent;
+    border: 2px solid #121212;
+    text-align: end;
+    align-content: end;
 }

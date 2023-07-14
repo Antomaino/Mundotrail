@@ -9,23 +9,23 @@ const productos = [
 	},
 	{
 		id: "2",
-		nombre: "Pantalon",
+		nombre: "Campera",
 		marca: "Adidas",
 		precio: 100,
-		descripcion: "Pantalon corto, ideal para tus entrenamientos de verano",
+		descripcion: "Campera hombre ideal para tus entrenamientos al aire libre",
 	},
 	{
 		id: "3",
-		nombre: "Remera",
+		nombre: "Campera",
 		marca: "Adidas",
 		precio: 150,
-		descripcion: "Remera manga corta ideal para tus entrenamientos al aire libre",
+		descripcion: "Campera mujer ideal para tus entrenamientos al aire libre",
 	},
 	{
 		id: "4",
 		nombre: "Calza",
 		marca: "Nike",
-		precio: 200,
+		precio: 120,
 		descripcion: "Calza deportiva con ajuste en cintura",
 	},
 	{
@@ -35,7 +35,16 @@ const productos = [
 		precio: 250,
 		descripcion: "Zapatillas de suela ideal para tus entrenamientos de Montaña",
 	},
+	{
+		id: "6",
+		nombre: "Remera",
+		marca: "Montagne",
+		precio: 70,
+		descripcion: "Remera de hombre deportiva. ",
+	},
 ];
+
+
 let carrito = [];
 let cantidad;
 let total = 0;
