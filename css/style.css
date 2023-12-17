@@ -1,7 +1,22 @@
+/* Estilos base */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}   
+
 body {
-    background-color: #ececec;
+    position: relative;
+    margin-bottom: 100px; /* Ajusta según la altura del pie de página */
 }
 
+.opacidad {
+    position: relative;
+    color: #fdfdfd;
+}
 
 .contenedor {
     display: grid;
@@ -16,68 +31,19 @@ body {
     padding: 20%;
 }
 
-/*### BOTON BUSCAR ###*/
-form button {
-    border: 0;
-    background-image: linear-gradient(150deg, #019615,
-            #83937B,
-            #dbfac4);
-    border-radius: 8px;
-    color: #fff;
-    display: flex;
-    font-size: 14px;
-    padding: 4px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-form button span {
-    background-color: #111;
-    padding: 9px 18px;
-    border-radius: 6px;
-    transition: .3s;
-}
-
-form button:hover span {
-    background: none;
-
-}
-
-form button:active {
-    transform: scale(0.9);
-}
-
-.tracking-in-contract {
-    animation: tracking-in-contract 0.4s linear both
-}
-
-@keyframes tracking-in-contract {
-    0% {
-        letter-spacing: .6em;
-        opacity: 0
-    }
-
-    40% {
-        opacity: .6
-    }
-
-    100% {
-        letter-spacing: normal;
-        opacity: 1
-    }
-}
-
-.zapas {
-    display: flex;
-    width: 100%;
-    padding: .5rem;
+a {
+    text-decoration: none;
 }
 
 img {
     width: 150px;
 }
 
-/*### PRODUCTOS DESTACADOS ###*/
+.carousel-item {
+    height: 800px;
+}
+
+/* PRODUCTOS DESTACADOS */
 
 .kodfun-galeri {
     display: flex;
@@ -101,3 +67,157 @@ img {
 h2 {
     text-align: center;
 }
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #071b17;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 30px 0px;
+}
+
+.pie-pagina .grupo-1 .loguito,
+.pie-pagina .grupo-1 .box figure {
+    background-color: #fdfdfd;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2,
+.pie-pagina .grupo-1 .box p {
+    color: #fdfdfd;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fdfdfd;
+    margin-right: 10px;
+    background-color: #08201c;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #08201c;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* TARJETITAS */
+
+.tarjetitas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 3px;
+    box-sizing: border-box;
+    padding: 90px;
+    max-width: 800px;
+    margin: auto;
+    place-items: center;
+
+}
+
+.tarjetitas img {
+    max-width: 100%;
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 10px;
+}
+
+.icon-logo {
+    width: 5%;
+}
+
+.item {
+    color: #fdfdfd;
+    border: #fff 1px solid;
+    height: 5px;
+    margin: 0.5%;
+    padding: 0.5%;
+    border-radius: 20px;
+}
+
+.pie-pagina .grupo-1 .box .menu {
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+}
+
+.footer-menu {
+    list-style-type: none;
+}
+
+.contact-info {
+    text-decoration: none;
+    color: #fdfdfd;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+a:hover+.contact-info,
+a:hover {
+    color: #74A171;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor h1 {
+        padding: 10%;
+    }
+
+    .tarjetitas {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .tarjetitas img {
+        margin: 10px 0;
+    }
+}
+

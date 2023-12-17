@@ -1,0 +1,117 @@
+[
+    {
+        "id": 1,
+        "name": "Porta Bastones - Compress",
+        "image": "1.PNG",
+        "price": 1
+    },
+    {
+        "id": 2,
+        "name": "Chalecos de hidratación - Otso",
+        "image": "2.PNG",
+        "price": 1
+    },
+    {
+        "id": 3,
+        "name": "Medias - Oliver",
+        "image": "3.PNG",
+        "price": 1
+    },
+    {
+        "id": 4,
+        "name": "Fast Cup - Compress",
+        "image": "4.PNG",
+        "price": 1
+    },
+    {
+        "id": 5,
+        "name": "SOFT FLASK 500 ML - Weiss",
+        "image": "5.PNG",
+        "price": 1
+    },
+    {
+        "id": 6,
+        "name": "SOFT FLASK 500 ML CON BOMBILLA",
+        "image": "6.PNG",
+        "price": 1
+    },
+    {
+        "id": 7,
+        "name": "SHORT NIMBO",
+        "image": "7.JPG",
+        "price": 1
+    },
+    {
+        "id": 8,
+        "name": "CHALECO + HYDRATION BAG",
+        "image": "8.JPG",
+        "price": 1
+    },
+    {
+        "id": 9,
+        "name": "CHALECO + HYDRATION BAG Blanco",
+        "image": "9.PNG",
+        "price": 1
+    },
+    {
+        "id": 10,
+        "name": "CHALECO FLEX 2+5 L",
+        "image": "10.PNG",
+        "price": 1
+    },
+    {
+        "id": 11,
+        "name": "RIÑONERA SLIM VERDE",
+        "image": "11.PNG",
+        "price": 1
+    },
+    {
+        "id": 12,
+        "name": "RIÑONERA SLIM ROJA",
+        "image": "12.PNG",
+        "price": 1
+    },
+    {
+        "id": 13,
+        "name": "PRODUCT NAME 6CHALECO SIMER II 10 L + SOFT AZUL",
+        "image": "13.PNG",
+        "price": 1
+    },
+    {
+        "id": 14,
+        "name": "PRODUCT NAME 6CHALECO SIMER II 10 L + SOFT ROSADO",
+        "image": "14.PNG",
+        "price": 1
+    },
+    {
+        "id": 15,
+        "name": "REMERA KOLDRI NEGRA",
+        "image": "15.PNG",
+        "price": 1
+    },
+    {
+        "id": 16,
+        "name": "REMERA KOLDRI ROJA",
+        "image": "16.PNG",
+        "price": 1
+    },
+    {
+        "id": 17,
+        "name": "REMERA KOLDRI AZUL",
+        "image": "17.PNG",
+        "price": 1
+    },
+    {
+        "id": 18,
+        "name": "PERFORMANCE SHORT SOCKS AZUL",
+        "image": "18.PNG",
+        "price": 1
+    },
+    {
+        "id": 19,
+        "name": "PERFORMANCE SHORT SOCKS ROJO",
+        "image": "19.PNG",
+        "price": 1
+    }
+]
+
